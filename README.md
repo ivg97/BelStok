@@ -13,7 +13,7 @@
 > python3 manage.py runserver
 
 #### Project connection ty celery
-For celery==4.1.0 install kombu==4.1.0 and billiard==3.5.0.2, alse kombu>=4.2.0 rename 'async' in 'asynchronous'
+For celery==4.1.0 install kombu==4.1.0 and billiard==3.5.0.2, else kombu>=4.2.0 rename 'async' in 'asynchronous'
 
 ### Run selery:
 > celery -A belStock_shop worker -l info
