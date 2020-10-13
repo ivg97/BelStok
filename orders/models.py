@@ -3,7 +3,7 @@ from shop.models import Product
 
 class Order(models.Model):
     '''
-    Define filed for save information abaut customer and
+    Define filed for save information about customer and
     flag paid for define payment order
     '''
     first_name = models.CharField(max_length=50)

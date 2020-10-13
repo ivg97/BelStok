@@ -20,7 +20,7 @@ def product_list(request, category_slug=None):
 def product_detail(request, id, slug):
     '''Hander display page every product'''
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
-
+    print(request)
     cart_product_form = CartAddProductForm()
     print('2 - detail.html - product_detail: ', product.name)
     return render(request, 'shop/product/detail.html',
