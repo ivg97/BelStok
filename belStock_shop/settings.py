@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'coupons.apps.CouponsConfig',
+    'easy_thumbnails',
 
 ]
 
@@ -112,6 +113,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
+THUMBNAIL_ALIASES = {
+    '': {
+        'default': {
+                    'size': (450, 330),
+                    'crop': "smart",
+                   }
+    }
+}
 
 LANGUAGE_CODE = 'en-ru'
 
